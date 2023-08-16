@@ -56,7 +56,7 @@ const container = {
 	hidden: { opacity: 0, y: '5%' },
 };
 function validateName(value) {
-	if (!/^[a-zA-Z]+$/.test(value)) {
+	if (!/^[\s\p{L}]+$/u.test(value)) {
 		return 'Name can consist of only letters';
 	}
 	return undefined;
