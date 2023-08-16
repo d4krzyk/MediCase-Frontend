@@ -1,0 +1,105 @@
+.toggle{
+    background-color: #860000;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toggle_right{
+    background-color: #ffffff;
+    position:relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    left: 300px;
+    transform: scale(90%) rotate(45deg);
+}
+.toggle_left{
+    background-color: white;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin-top: -3px;
+    margin-left: 0px; 
+    transition: all 0.7s;
+    transform: scale(90%) rotate(45deg);
+    
+}
+.toggle_left:hover{
+    transform: scale(80%) rotate(90deg);
+    border-radius: 5px;
+}
+.toggle_left:active{
+    transform: scale(90%) translateX(400px);
+    border-radius: 30px;
+}
+
+.admin_scroll{
+  overflow-y: auto;
+  
+}
+
+.admin_scroll::-webkit-scrollbar {
+  width: 20px;
+}
+/* Track */
+.admin_scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey; 
+  background-color: hsl(194, 31%, 15%); 
+  border-radius: 35px;
+}
+ 
+/* Handle */
+.admin_scroll::-webkit-scrollbar-thumb {
+  background-color: hsl(185, 69%, 35%); 
+  border: 5px solid transparent;
+  border-radius: 100px;
+  background-clip: content-box;
+}
+
+/* Handle on hover */
+.admin_scroll::-webkit-scrollbar-thumb:hover {
+  background: hsl(188, 80%, 30%); 
+  border: 5px solid transparent;
+  border-radius: 100px;
+  background-clip: content-box;
+}
+
+
+.blurContainter{
+  backdrop-filter: blur(10px); /* ustaw efekt rozmazywania */
+  -webkit-backdrop-filter: blur(10px); /* ustaw efekt rozmazywania dla Safari */
+}
+
+.form_check .form_check_input:checked {
+  background-color: hsl(185, 69%, 35%)!important;
+}
+
+.form_check .form_check_input:checked:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(28, 141, 151, 0.25)
+}
+.form_check .form_check_input:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
+}
+.form_check .form_check_input:active {
+  background-color: hsl(185, 69%, 85%); 
+}
+
+
+
+.inactive {
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 0px 0px #0f97d1 !important ;
+  transition: all 0.16s ease-in-out;
+}
+.active{
+  border: 2px solid transparent !important;
+  box-shadow: 0px 0px 6px 6px #0f97d1 !important ;
+  transition: all 0.16s ease-in-out;
+}
+
+

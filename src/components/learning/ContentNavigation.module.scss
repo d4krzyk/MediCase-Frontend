@@ -1,0 +1,36 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+@include media-breakpoint-up(xs) { 
+    .navgrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45vh, 1fr));
+        grid-auto-rows: 40vh;
+    }
+ }
+
+ @include media-breakpoint-up(sm) { 
+    .navgrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45vw, 1fr));
+        grid-auto-rows: 40vh;
+    }
+ }
+
+
+ @include media-breakpoint-up(md) { 
+    .navgrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45vw, 1fr));
+        grid-auto-rows: 40vh;
+    }
+ }
+
+@include media-breakpoint-up(lg) { 
+    .navgrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
+        grid-auto-rows: minmax(37vh, 1fr);
+    }
+ }

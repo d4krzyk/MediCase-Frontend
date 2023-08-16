@@ -1,0 +1,51 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+.item1 {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: thick rgba(255, 255, 255, 0.2) !important;
+}
+
+.item2 {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: thick rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn:hover {
+    background-color: rgba(30, 30, 30, 0.15) !important;
+}
+
+.btnw:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.toggler:focus,
+.toggler:active,
+.toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nocaret::after {
+    display: none !important;
+}
+
+@include media-breakpoint-up(xs) {
+    .container {
+        width: 100%;
+    }
+
+}
+
+@include media-breakpoint-up(lg) {
+    .container {
+        width: 50%;
+    }
+}
+.disableTextSelection{
+    -moz-user-select:none; /* firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE*/
+    user-select: none; /* Standard syntax */
+}

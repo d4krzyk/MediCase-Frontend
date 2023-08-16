@@ -1,0 +1,27 @@
+@use "sass:map";
+
+$theme-colors: (
+  "light": #d1d1d1,
+  "dark": #323232,
+  "background": #0a2229,
+  "primary": rgb(10, 132, 136),
+  "secondary": hsl(170, 54%, 40%),
+  "pink": rgb(154, 51 ,103),
+  "success" : hsl(156, 68%, 41%),
+  "danger" : hsl(0, 68%, 36%),
+);
+
+@import "bootstrap";
+
+:export{
+  light:map.get($theme-colors, "light");
+  dark:map.get($theme-colors, "dark");
+  danger:map.get($theme-colors, "danger");
+  textLight: lighten(map.get($theme-colors, "dark"), 10%);
+  textDark: darken(map.get($theme-colors, "light"), 10%);
+
+  primary:map.get($theme-colors, "primary");
+  secondary:map.get($theme-colors, "secondary");
+  textPrimary: lighten(map.get($theme-colors, "dark"), 10%);
+  textSecondary: lighten(map.get($theme-colors, "dark"), 10%);
+}

@@ -5,9 +5,92 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 
+  transition: background 0.5s;
+
+  
+  
+  background: url("/src/static/pc.svg");
+  background-size: 125vw;
+  
+  
+  /*animation-name: MOVE-BG;
+  animation-duration: 45s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;*/
+   
+}
+.quill p{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+/*
+@keyframes MOVE-BG {
+  0% {
+    background-position: center;
+  }
+  50% { 
+    background-position: calc(50% + 34px) calc(50% + 34px);
+  }
+  100% { 
+    background-position: center;
+  }
+}
+*/
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@media only screen and (max-aspect-ratio: 16/9){
+  body {
+    background: url("/src/static/pc.svg") center;
+    background-size: cover;
+    background-size: 200vw;
+    background-attachment: fixed;
+    
+  }
+}
+@media only screen and (max-aspect-ratio: 4/3) and ((min-aspect-ratio: 3/4)){
+  body {
+    background: url("/src/static/pc.svg") center;
+    background-size: cover;
+    background-size: 200vw;
+    background-attachment: fixed;
+    animation-iteration-count: 0;
+    
+  }
+}
+@media only screen and (max-aspect-ratio: 3/4) and ((min-aspect-ratio: 10/16)){
+  body {
+    background: url("/src/static/pc.svg") center;
+    background-size: cover;
+    background-size: 200vw;
+    background-attachment: fixed;
+    animation-iteration-count: 0;
+  }
+}
+@media only screen and (max-aspect-ratio: 10/16) and ((min-aspect-ratio: 9/16)){
+  body {
+    background: url("/src/static/pc.svg") center center;
+    background-size: 200vw;
+    background-size: cover;
+    background-attachment: fixed;
+    animation-iteration-count: 0;
+  }
+}
+@media only screen and (max-aspect-ratio: 9/16){
+  body {
+    background: url("/src/static/pc.svg") center center;
+    background-size: 135vw;
+    background-size: cover;
+    background-attachment: fixed;
+    animation-iteration-count: 0;
+  }
+
+}
+
