@@ -46,7 +46,9 @@ interface PostGroupRequest{
     name: string,
     description: string,
     expirationDate?: string,
-    roleId: string[],
+    isAdmin: boolean,
+    isModerator: boolean,
+    isUser: boolean
 }
 
 interface PutGroupRequestName{

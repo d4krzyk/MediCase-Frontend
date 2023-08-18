@@ -46,16 +46,8 @@ export function AddGroupModal({ show, setShow, dataSubmitted}) {
       const handleSubmitAdd = (e) => {
         e.preventDefault();
 
-        const rolesGroup = [];
-        if(formData.IsUser)
-         rolesGroup.push(1);
-        if(formData.IsModerator)
-         rolesGroup.push(2);
-        if(formData.IsAdmin)
-         rolesGroup.push(3);
-
         mutateAddGroup({name: formData.name ,description: formData.description ,
-        expirationDate: formData.expirationDate, roleId: rolesGroup});
+        expirationDate: formData.expirationDate, isAdmin: formData.IsAdmin, isModerator: formData.IsModerator, isUser: formData.IsUser});
 
         //dataSubmitted(formData)
         
