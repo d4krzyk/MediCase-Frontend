@@ -83,15 +83,15 @@ function NavbarButtons({ user, className = '' }) {
     px-3 py-2 mx-2 rounded-3 text-white ${isActive ? 'btn-secondary' : ``}`
     return (
         <div className={`${className}`}>
-            {
+            {user.isUser &&
                 <NavLink to={learningItem.route} className={classes}>
                     {learningItem.display}
                 </NavLink>
             }
-            {//user.isModerator &&
+            {user.isModerator &&
                 <ModeratorDropdown classes={classes} />
             }
-            {//user.isAdmin &&
+            {user.isAdmin &&
                 <NavLink to={adminItem.route} className={classes}>
                     {adminItem.display}
                 </NavLink>
@@ -106,15 +106,15 @@ function NavbarIcons({ user, className = '' }) {
 
     return (
         <div className={`${className}`}>
-            {
+            {user.isUser &&
                 <NavLink to={learningItem.route} className={classes}>
                     {learningItem.icon}
                 </NavLink>
             }
-            {//user.isModerator &&
+            {user.isModerator &&
                 <ModeratorDropdown classes={classes} icon={true} />
             }
-            {//user.isAdmin &&
+            {user.isAdmin &&
                 <NavLink to={adminItem.route} className={classes}>
                     {adminItem.icon}
                 </NavLink>

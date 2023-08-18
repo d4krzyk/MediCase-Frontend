@@ -1,11 +1,9 @@
 import axios, { AxiosInstance } from 'axios';
 import { useAppStore } from '../lib/store';
-import appConfiguration from '../appconfig.json'
 
 //export const baseServerUrl = appConfiguration.serverUrl
 
 export const baseServerUrl = `https://localhost:7065/api`;
-//export const baseServerUrl = `https://localhost:7093/api`;
 
 export const axiosClient : AxiosInstance = axios.create({
     baseURL: baseServerUrl,
