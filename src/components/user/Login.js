@@ -34,7 +34,7 @@ export function Login() {
 		onSuccess: token => {
 			setToken(token);
       updateUser().then(() => {
-        navigate('/site/user/content');
+        navigate('/site');
       })
 		},
 	});
